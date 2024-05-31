@@ -9,7 +9,7 @@ interface Props {
   variant?: Variant
 }
 
-const Button = defineComponent({
+const VButton = defineComponent({
   props: {
     type: {
       type: String as PropType<Button>,
@@ -29,3 +29,5 @@ const Button = defineComponent({
     )
   }
 })
+
+export default VButton

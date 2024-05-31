@@ -3,6 +3,7 @@ import EyeClosed from '@/components/icons/EyeClosed.vue'
 import EyeOpen from '@/components/icons/EyeOpen.vue'
 
 
+
 // Define the composable
 export const usePasswordEye = () => {
   const isEyeOpen = ref(false)

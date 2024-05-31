@@ -1,6 +1,22 @@
 import { defineComponent, ref, watch, Transition, Teleport } from 'vue'
 import VButton from '@/components/atoms/VButton'
 
+// usage example 
+
+//  <Modal :isOpen="isOpen" :onClose="onClose">
+//        <template #header>
+//         Modal Title
+//       </template>
+//       <template #body>
+//         <p class="font-bold mb-4">You can scroll the content behind the modal</p>
+//         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+//       </template>
+//       <template #footer>
+//         <Button @click="onClose">Close</Button>
+//         <Button class="ml-2" variant="ghost">Secondary Action</Button>
+//       </template>
+//         </Modal>
+
 const ModalOverlay = defineComponent({
   setup(_, { slots }) {
     return () => (
